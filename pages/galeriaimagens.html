@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/iconecanada-removebg-preview.png" type="imagem/png">
+    <link rel="stylesheet" href="../Css/galeria.css">
+    <title>Galeria de Imagens</title>
+</head>
+<body>
+
+    <h1 class="cabeçalho">GALERIA DE IMAGENS</h1>
+
+    <div class="gallery">
+        <!-- Primeira linha de imagens -->
+        <div class="gallery-row">
+          <div class="image-container" onclick="openModal(1)">
+            <img src="../img/monte-robson2.jpg" alt="Imagem 1">
+            <p>MONTE ROBSON</p>
+          </div>
+          <div class="image-container" onclick="openModal(2)">
+            <img src="../img/niagara2.jpg" alt="Imagem 2">
+            <p>NIAGARA FALLS</p>
+          </div>
+          <div class="image-container" onclick="openModal(3)">
+            <img src="../img/aurora-boreal-2.jpg" alt="Imagem 3">
+            <p>AURORA BOREAL</p>
+          </div>
+        </div>
+    
+        <!-- Segunda linha de imagens -->
+        <div class="gallery-row">
+          <div class="image-container" onclick="openModal(4)">
+            <img src="../img/nahanni-park.jpg" alt="Nahanni-Park">
+            <p>Nahanni Park</p>
+          </div>
+          <div class="image-container" onclick="openModal(5)">
+            <img src="../img/jasper-national-park.webp" alt="Jasper-National-Park">
+            <p>Jasper-National-Park</p>
+          </div>
+          <div class="image-container" onclick="openModal(6)">
+            <img src="../img/lake-louise.jpg" alt="Lake Louise">
+            <p>Lake Louise</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content-container"></div>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+      </div>
+    
+  <Script src="../JavaScript/galeria.js"></Script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/iconecanada-removebg-preview.png" type="imagem/png">
+    <link rel="stylesheet" href="../Css/style.css">
+
+    <title>Canadá-destino ideal</title>
+</head>
+<body>     
+   
+    
+        <header class="contCabec">
+            <figure class="logo-imagem">
+                <img class="canada_cabecalho" src="../img/imagem-bandeira-canada.jfif" alt="Logotipo bandeira do Canada" width="100px">
+            </figure>
+            <div class="logo-texto"></div>
+            <h1>Canadá</h1>
+        </header>
+        
+        <nav class="contdiv">
+                <ul>
+                    <li><a href="../pages/introducao.html" class="contNav">Página inicial</a></li>
+                    <li><a href="../pages/belezasnaturais.html" class="contNav">Belezas naturais</a></li>
+                    <li><a href="../pages/guiaturistico.html" class="contNav">Guia Turístico</a></li>
+                    <li><a href="../pages/galeriaimagens.html" class="contNav">Galeria de imagens</a></li>
+            </ul>
+        </nav>
+       </header>   
+</head>
+<body>
+    <div class="feedback-wrapper">
+        <div class="feedback-container">
+            <h1>Deixe seu Feedback</h1>
+            <form id="feedbackForm">
+                <textarea name="feedback" placeholder="Escreva aqui seu feedback..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="message" id="message"></div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const message = document.getElementById('message');
+            message.textContent = 'Obrigado pelo seu feedback!';
+        });
+    </script>
+</body>
+</html>

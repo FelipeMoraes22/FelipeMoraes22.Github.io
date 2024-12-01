@@ -1,0 +1,72 @@
+
+    /* Estilo dos botões */
+    .open-modal-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+
+      .open-modal-btn:hover {
+        background-color: #0056b3;
+      }
+  
+      /* Fundo do modal (fade cinza) */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      /* Modal em si */
+      .modal-content {
+        background-color: red;
+        color: white;
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+  
+      /* Título do modal */
+      .modal-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+  
+      /* Botão de fechar */
+      .close-modal-btn {
+        margin-top: 15px;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: red;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      .close-modal-btn:hover {
+        background-color: #f5f5f5;
+      }
+  
+      /* Layout dos botões */
+      .buttons-container {
+        display: flex;
+      justify-content: space-evenly; /* Distribui igualmente os botões */
+      padding: 20px;
+      gap: 10px; /* Espaçamento entre os botões */
+    }
+      
+  
